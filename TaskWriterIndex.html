@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskReminder</title>
     <link rel="stylesheet" href="TaskWriterIndexStyle.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Your Tasks For Today</h1>
-        <ul class="tasks">
-            <!-- <li id="task1" class="task-item"><input type="checkbox" onclick="OnTaskClick()" name="" id="" class="task-input">Task1</li>
-            <li id="task2" class="task-item"><input type="checkbox" onclick="OnTaskClick()" name="" id="" class="task-input">Task2</li>
-            <li id="task3" class="task-item"><input type="checkbox" onclick="OnTaskClick()" name="" id="" class="task-input">Task3</li>
-            <li id="task4" class="task-item"><input type="checkbox" onclick="OnTaskClick()" name="" id="" class="task-input">Task4</li> -->
-        </ul>
-        <div class="btn"><button id="addtsk"><p>+</p></button></div>
+        <div class="uncheckedTask">
+            <h1>Your Tasks For Today</h1>
+            <!-- Tasks will be added inside ul as li elements -->
+            <ul class="tasks">
+            </ul>
+            <!-- This button will add task to ul -->
+            <div class="btn"><button id="addtsk">
+                    <p>+</p>
+                </button></div>
+        </div>
+        <div class="checkedTask">
+            <h1 class="h-primary">Tasks Finished</h1>
+            <!-- Tasks will be added inside ul as li elements -->
+            <ul class="done-tasks">
+            </ul>
+        </div>
     </div>
-    <script src="/TaskWriter/TaskWriter.js"></script>
+    <script src="/TaskWriter.js"></script>
 </body>
+
 </html>
