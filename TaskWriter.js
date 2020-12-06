@@ -23,11 +23,7 @@ function MoveTodoneTask(i) {
 }
 
 let butn = document.getElementById('addtsk');
-butn.addEventListener('focus', noOutline, true);
 butn.addEventListener('click', addTask, true);
-function noOutline() {
-    butn.style.outline = "none";
-}
 
 // This function will Prompt user for Task
 // If task no Specified Throws a Alert window
@@ -40,8 +36,7 @@ function addTask() {
         att.value = "task-item";
         li.setAttributeNode(att);
         console.log("created a element")
-        li.innerHTML = `<input type="checkbox" onclick="OnTaskClick()" name="" id="" class="task-input"><h3>${ogtask}</h3>`;
-        // if (j > 10) { li.style.display = "none" };
+        li.innerHTML = `<label id="inp-tsk"><input type="checkbox" onclick="OnTaskClick()" name="" id="inp-tsk" class="task-input"><h3>${ogtask}</h3></label>`;
         j++;
         tsk.appendChild(li);
     } else {
